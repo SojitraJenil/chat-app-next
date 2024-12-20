@@ -23,8 +23,8 @@ const FindUser = () => {
 
     return (
         <div className="flex-1 justify-center items-center min-h-screen bg-gray-100">
-            <div className="w-full max-w-lg p-2 bg-white shadow-md rounded-lg">
-                <form onSubmit={handleSearch} className="flex items-center mb-4">
+            <div className="w-full h-screen max-w-lg p-2 bg-white shadow-md rounded-lg">
+                {/* <form onSubmit={handleSearch} className="flex items-center mb-4">
                     <input
                         type="text"
                         value={searchQuery}
@@ -38,9 +38,10 @@ const FindUser = () => {
                     >
                         Search
                     </button>
-                </form>
+                </form> */}
 
                 {loading && <p className="text-center text-gray-500">Searching...</p>}
+                <p className='text-center'>coming soon /find-user</p>
 
                 {users.length > 0 && (
                     <div>

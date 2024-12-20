@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaUserCircle } from "react-icons/fa"; // Optional: Icon for default profile
+import { RotatingLines } from "react-loader-spinner";
 
 const Profile = () => {
     // Use a dummy user object for testing
@@ -46,10 +47,10 @@ const Profile = () => {
     // Display loading spinner
     if (loading) {
         return (
-            <div className="flex justify-center items-center h-full">
-                <div className="animate-spin rounded-full border-4 border-t-transparent border-gray-400 w-12 h-12"></div>
+            <div className="flex items-center justify-center pt-20">
+                <RotatingLines width="50" strokeColor="#035F51" />
             </div>
-        );
+        )
     }
 
     // If user is not found, show a message

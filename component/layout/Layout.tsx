@@ -9,7 +9,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
-  const isUserRoute = router.pathname === "/users";
+  const isUserRoute = ["/users", "/find-user", "/notifications", "/settings", "/profile"].includes(router.pathname);
 
   return (
     <div className="flex flex-col h-screen w-full bg-white">

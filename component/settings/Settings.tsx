@@ -11,9 +11,9 @@ function Settings() {
         <div className={`min-h-screen  ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}>
             <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6">
 
-                <div className="space-y-6">
+                <div className="space-y-6 h-screen">
                     {/* Dark Mode Toggle */}
-                    <div className="flex items-center justify-between">
+                    {/* <div className="flex items-center justify-between">
                         <label htmlFor="darkMode" className="text-lg font-medium">
                             Dark Mode
                         </label>
@@ -28,10 +28,11 @@ function Settings() {
                                     } inline-block w-4 h-4 transform bg-white rounded-full transition-transform duration-200`}
                             ></span>
                         </button>
-                    </div>
+                    </div> */}
+                    <p className='text-center'>coming soon / settings</p>
 
                     {/* Other settings options */}
-                    <div className="flex items-center justify-between">
+                    {/* <div className="flex items-center justify-between">
                         <label htmlFor="notifications" className="text-lg font-medium">
                             Enable Notifications
                         </label>
@@ -47,7 +48,7 @@ function Settings() {
                             Privacy Settings
                         </label>
                         <button className="text-blue-600">Edit</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
