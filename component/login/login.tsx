@@ -16,13 +16,13 @@ function Login() {
   const router = useRouter();
   const { email }: any = router.query;
 
-  useEffect(() => {
-    const authToken = cookies.get("auth-token");
-    if (authToken) {
-      console.log("Navigating to /dashboard");
-      router.push("/users");
-    }
-  }, [cookies, router]);
+  // useEffect(() => {
+  //   const authToken = cookies.get("auth-token");
+  //   if (authToken) {
+  //     console.log("Navigating to /dashboard");
+  //     router.push("/users");
+  //   }
+  // }, [cookies, router]);
 
   const usersRef = collection(db, "Users");
 
